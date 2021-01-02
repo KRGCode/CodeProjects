@@ -3,8 +3,6 @@ Hobby Account, Music Code, Art with Code, analytics, and small projects
 
 #Papa Roach-Last Resort
 #play e,g,f#,g,b,g,f#,g
-#play
-
 
 
 4.times do
