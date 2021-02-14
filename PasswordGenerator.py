@@ -1,5 +1,5 @@
 #Vsual Studio Code
-#Python 3.9.1
+#Python 3.9.1 with Powershell Terminal
 
 import random
 
