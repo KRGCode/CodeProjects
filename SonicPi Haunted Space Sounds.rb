@@ -1,3 +1,6 @@
+#Use in SonicPi
+#Inspired by #ambient experiment by Darin Wilson (SonicPI example)
+
 use_synth :hollow
 with_fx :flanger, mix: 0.7 do
   with_fx :echo do
