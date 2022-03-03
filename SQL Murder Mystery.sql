@@ -54,4 +54,4 @@ and id like '48Z%'
 #48Z7A (ID),	28819,	Joe Germuska, 	20160305,	gold
 #48Z55 (ID),	67318,	Jeremy Bowers,	20160101,	gold
 
-#first witness, who above checked in 1/9
+#first witness statement, who above checked in 1/9?
