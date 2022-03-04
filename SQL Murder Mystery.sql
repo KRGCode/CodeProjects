@@ -51,7 +51,43 @@ from get_fit_now_member
 where membership_status = 'gold'
 and id like '48Z%'
 
-#48Z7A (ID),	28819,	Joe Germuska, 	20160305,	gold
-#48Z55 (ID),	67318,	Jeremy Bowers,	20160101,	gold
+#48Z7A (ID),	28819,	Joe Germuska, 	20160305 (membership_start_date),	gold
+#48Z55 (ID),	67318,	Jeremy Bowers,	20160101 (membership_start_date),	gold
 
 #first witness statement, who above checked in 1/9?
+
+Select *
+from get_fit_now_check_in
+where membership_id Like '48Z%'
+
+# 48Z7A (ID)	20180109 (Date)	1600	1730 #Joe Germuska
+
+##########################################################################################
+
+#First Witness, license plate included H42W and was male
+
+Select *
+from drivers_license
+where plate_number like '%H42W%'
+and gender = 'male'
+
+#423327 (ID)	30	70	brown	brown	male	0H42W2 (License Plate)	Chevrolet	Spark LS
+#664760 (iD)	21	71	black	black	male	4H42WR (License Plate)	Nissan	Altima
+
+Select *
+from person
+where license_id = '423327'
+
+#67318 (ID)	Jeremy Bowers	423327 (license_id)	530	Washington Pl, Apt 3A	871539279 (SSN)
+
+####################################################################################################
+
+#Did Jeremy Bowers check into the gym on 1/9 or was he in that area during the murder? Did he steal the gym bag?
+
+
+
+
+
+
+
+
