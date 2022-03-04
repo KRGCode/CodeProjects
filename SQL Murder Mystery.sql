@@ -78,14 +78,74 @@ Select *
 from person
 where license_id = '423327'
 
-#67318 (ID)	Jeremy Bowers	423327 (license_id)	530	Washington Pl, Apt 3A	871539279 (SSN)
+#67318 (person_id)	Jeremy Bowers	423327 (license_id)	530	Washington Pl, Apt 3A	871539279 (SSN)
 
 ####################################################################################################
 
-#Did Jeremy Bowers check into the gym on 1/9 or was he in that area during the murder? Did he steal the gym bag?
+#Did Jeremy Bowers check into the gym on 1/9 or was he in that area during the murder? Did he steal the gym bag? More than one person involved, hired hit man?
+#Murder was on 1/15/2018
+
+Select facebook_event_checkin.person_id, interview.person_id, transcript
+from Interview
+join facebook_event_checkin
+on interview.person_id = facebook_event_checkin.person_id
+where interview.person_id = '67318'
+
+#Interview with Jeremy Bowers-
+#67318 (person_id)	I was hired by a woman with a lot of money. I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). 
+#She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017.
+########################################################################################################################################
+
+Select *
+from facebook_event_checkin
+where date like '201712%'
+and
+event_name like '%SQL%';
+
+Review of queried data shows person_id 99716 appearing three times
+
+Select *
+from facebook_event_checkin
+where person_id = '99716'
+and
+event_name like '%SQL%';
+
+#99716 (person_id)	1143	SQL Symphony Concert	20171206 (Date)
+#99716 (person_id)	1143	SQL Symphony Concert	20171212 (Date)
+#99716 (person_id)	1143	SQL Symphony Concert	20171229 (Date)
+
+#99716 did not reveal an interview
+###############################################################################################################################################
+#Interview with Jeremy Bowers--lots of money, height between 65 and 67, red hair, Tesla Model S
+
+Select *
+from drivers_license
+where gender = 'female'
+and 
+car_make = 'Tesla'
+and
+car_model = 'Model S'
+and
+hair_color = 'red';
 
 
+#202298 (ID)	68 (Age)	66	green	red	female	500123 (plates)	Tesla	Model S
+#291182 (ID)	65 (Age)	66	blue	red	female	08CM64 (plates)	Tesla	Model S
+#918773 (ID)	48 (Age)	65	black	red	female	917UU3 (plates)	Tesla	Model S
 
+Select *
+from person
+where license_id = '291182'
+or
+license_id = '202298'
+or
+license_id = '918773'
+
+
+#78881 (ID)	Red Korb	918773	107	Camerata Dr	961388910 (SSN)
+#90700 (ID)	Regina George	291182	332	Maple Ave	337169072 (SSN)
+#99716 (ID)	Miranda Priestly	202298	1883	Golden Ave	987756388 (SSN)
+#No interviews found with the above ids
 
 
 
