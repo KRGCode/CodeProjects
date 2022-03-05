@@ -142,11 +142,24 @@ or
 license_id = '918773'
 
 
-#78881 (ID)	Red Korb	918773	107	Camerata Dr	961388910 (SSN)
-#90700 (ID)	Regina George	291182	332	Maple Ave	337169072 (SSN)
-#99716 (ID)	Miranda Priestly	202298	1883	Golden Ave	987756388 (SSN)
+#78881 (ID)	Red Korb	918773	107	Camerata Dr	961388910 (SSN)--291182
+#90700 (ID)	Regina George	291182	332	Maple Ave	337169072 (SSN)--202298
+#99716 (ID)	Miranda Priestly	202298	1883	Golden Ave	987756388 (SSN)-918773
 #No interviews found with the above ids
+#########################################################################################################
+#Interview with Jeremy Bowers, lots of money
 
+Select *                          #No income results for 337169072
+from Income
+where ssn = '961388910'
+or
+ssn = '987756388'
+
+#ssn	annual_income
+961388910	278000
+987756388	310000 #************ Miranda Priestly
+
+#*******Congrats, you found the brains behind the murder! Everyone in SQL City hails you as the greatest SQL detective of all time. Time to break out the champagne!*********
 
 
 
