@@ -1,6 +1,2 @@
 Hi I'm @KRGCode
-Hobby Programmer with below Interests
-SonicPi
-SQL
-Python
-RaspberryPi based Projects
+Hobby Programmer with Interests SonicPi, SQL, Python, and RaspberryPi based Projects.
