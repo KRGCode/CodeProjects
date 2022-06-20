@@ -8,19 +8,19 @@ void setup() {
 }
 
 void loop() {
-  lcd.setCursor(4,0);               
+  lcd.scrollDisplayRight();
+  lcd.setCursor(4,0);          
   lcd.print ("KRGCode");         
   lcd.setCursor(3,2);
   lcd.print ("On Github");
   lcd.setCursor(0,0);
-  lcd.print ("*");
+  lcd.print ("+");
   lcd.setCursor(0,2);
-  lcd.print ("*");
+  lcd.print ("+");
   lcd.setCursor(15,0);
-  lcd.print ("*");
+  lcd.print ("+");
   lcd.setCursor(15,2);
-  lcd.print ("*");
-  
+  lcd.print ("+");
 
 // Turn on the blinking cursor:
   lcd.blink();
