@@ -4,7 +4,7 @@
 Select * from crime_scene_report
 where city is "SQL City" 
 and type is "murder"
-and date is "20180115"
+and date is "20180115";
 
 %Results: 
 Date: 20180115, Type: Murder, City: SQL City
