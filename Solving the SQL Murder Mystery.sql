@@ -12,7 +12,7 @@ Description: Security footage shows that there were 2 witnesses.
 The first witness lives at the last house on "Northwestern Dr". 
 The second witness, named Annabel, lives somewhere on "Franklin Ave".*/
 
-/*First Witness-------------------------------------------------------------
+/*First Witness-------------------------------------------------------------*/
 
 Select * from person
 where address_street_name is "Northwestern Dr"
