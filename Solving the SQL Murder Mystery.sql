@@ -22,5 +22,24 @@ order by address_number desc;
 ID: 14887, Name: Morty Schapiro, License_id: 118009, address_number: 4919, 
 address_street_name: Northwestern Drive, SSN: 11564949 */
 
+Select * from interview
+where person_id is "14887"
+
+/*Results:
+Person ID: 14887, I heard a gunshot and then saw a man run out. He had a "Get Fit Now Gym" bag. 
+The membership number on the bag started with "48Z". Only gold members have those bags. 
+The man got into a car with a plate that included "H42W". */
+
+/*Second Witness-----------------------------------------------------------*/
+
+Select * from person
+where address_street_name is "Franklin Ave"
+and name like 'Annabel%'
+
+/*Results:
+ID: 16371, Name: Annabel Miller, license_id: 490173, address_number: 103, address_street_name: Franklin Ave, SSN: 318771143
+
+
+
 
 
