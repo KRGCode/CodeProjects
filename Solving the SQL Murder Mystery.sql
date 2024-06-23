@@ -39,6 +39,15 @@ and name like 'Annabel%'
 /*Results:
 ID: 16371, Name: Annabel Miller, license_id: 490173, address_number: 103, address_street_name: Franklin Ave, SSN: 318771143
 
+Select * from interview
+where person_id is "16371"
+
+/*Results:
+Peron ID: 16371, I saw the murder happen, and I recognized the killer from my gym when I was working out last week 
+on January the 9th.*/
+
+/*Notes, both witnesses mention the gym with first witness having license plate details */
+
 
 
 
