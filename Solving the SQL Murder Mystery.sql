@@ -1,4 +1,5 @@
-/*The SQL Murder Mystery-https://mystery.knightlab.com//
+/*The SQL Murder Mystery-https://mystery.knightlab.com//  */
+
 /*You vaguely remember that the crime was a ​murder​ that occurred sometime on ​Jan.15, 2018​ and that it took place in ​SQL City​.*/
 
 Select * from crime_scene_report
@@ -65,6 +66,21 @@ and membership_status is 'gold'
 Id-48Z7A, person_id-28819, Name-Joe Germuska, membership_star_date-20160305, membership_status-gold
 Id-48Z55, person_id-67318, Name-Jeremy Bowers, membership_star_date-20160101, memebership_status-gold
 */
+
+/*Notes: No interview found for person_id 28819, Joe Germuska*/
+
+Select * from interview
+where person_id is '67318'
+
+/*Results:
+person_id-67318, transcript-I was hired by a woman with a lot of money. 
+I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). 
+She has red hair and she drives a Tesla Model S. 
+I know that she attended the SQL Symphony Concert 3 times in December 2017. */
+
+
+
+
 
 
 
