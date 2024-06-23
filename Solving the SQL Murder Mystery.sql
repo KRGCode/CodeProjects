@@ -48,6 +48,25 @@ on January the 9th.*/
 
 /*Notes, both witnesses mention the gym with first witness having license plate details */
 
+Select * from get_fit_now_check_in
+where check_in_date is '20180109'
+and membership_id like '48Z%'
+              
+/*Results:
+Membership_id-48Z7A, check_in_date-20180109, check_in_time-1600, check_out_time-1730
+Membership_id-48Z55, check_in_date-20180109, check_in_time-1530, check_out_time-1700
+*/
+
+Select * from get_fit_now_member
+where Id like '48Z%'
+and membership_status is 'gold'
+              
+/*Resuls:
+Id-48Z7A, person_id-28819, Name-Joe Germuska, membership_star_date-20160305, membership_status-gold
+Id-48Z55, person_id-67318, Name-Jeremy Bowers, membership_star_date-20160101, memebership_status-gold
+*/
+
+
 
 
 
