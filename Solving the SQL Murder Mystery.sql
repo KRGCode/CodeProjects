@@ -78,6 +78,54 @@ I don't know her name but I know she's around 5'5" (65") or 5'7" (67").
 She has red hair and she drives a Tesla Model S. 
 I know that she attended the SQL Symphony Concert 3 times in December 2017. */
 
+Select * from facebook_event_checkin
+where date like '201712%'
+and event_name like'SQL%'
+order by person_id
+
+/*Notes-query showed two person_ids that attended the SQL symphony three times in December 2017, 24556 and 99716 */
+
+Select * from drivers_license
+where hair_color is 'red'
+and car_make is 'Tesla'
+and gender is 'female'
+and height between 65 and 67
+
+/*Notes query showed three females with Tesla Model S, height match, and female, IDs are 202298, 291182, and 918773 */
+
+Select * from person
+where license_id is '202298'
+
+/* Results are Miranda Priestly, SSN-987756388 */
+
+Select * from person
+where license_id is '291182'
+
+/* Results are Regina George, SSN-337169072 */
+
+Select * from person
+where license_id is '918773'
+
+/* Results are Red Korb, SSN-961388910 */
+
+Select * from income
+where ssn is '987756388'
+
+/* Results are $310,000 for Miranda */
+
+Select * from income
+where ssn is '337169072'
+
+/* No results */
+
+Select * from income
+where ssn is '961388910'
+
+/*Results are $278,000 for Red */
+
+/*Notes-Mirand has the highest salary and matches the description, solution query shows the killer as Miranda Priestly /*
+
+
 
 
 
