@@ -19,7 +19,11 @@ with (Format CSV, Header);
 /*Pleae note that Lines 34 and 36 were removed as it was additonal details provided by the FTC and commas
 and percentage removed/converted to decimal*\
 
+
+
 /*Summary: As you can see in the attached graph (created with Graph Visualizer in ProstgregSQL0 Imposter Scams are the 2nd most reported
-to the FTC, this information allows*\
+to the FTC, the number of reports filed with the FTC wass 853,935. To put in perspective that 853,935/365 is 2,339 reports a day
+of imposter scams reported. This information can allow Federal and State governments to issue alerts on common imposter scams that are
+reported within their jurisdication to warn the public*\
 
 
