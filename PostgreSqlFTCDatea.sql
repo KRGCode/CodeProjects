@@ -19,6 +19,10 @@ with (Format CSV, Header);
 /*Pleae note that Lines 34 and 36 were removed as it was additonal details provided by the FTC and commas
 and percentage removed/converted to decimal*\
 
+Select 853935/365;
+2339
+
+
 
 
 /*Summary: As you can see in the attached graph (created with Graph Visualizer in ProstgregSQL0 Imposter Scams are the 2nd most reported
