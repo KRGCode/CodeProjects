@@ -25,7 +25,10 @@ ________________________________________________________________________________
 SELECT * FROM public.csn_metro_area_fraud_and_other
 where csn_metro like '%CA%'
 order by csn_number_of_reports desc
-limit 10
 
-The above query shows a total of   reports for the top 10 counties. This information allows targeted outreach. 
+SELECT sum(csn_number_of_reports) AS "Total" 
+FROM public.csn_metro_area_fraud_and_other
+where csn_metro like '%CA%';
+
+The above query shows a total of 397805 reports all California counties. This information allows targeted outreach. 
 ______________________________________________________________________________________
