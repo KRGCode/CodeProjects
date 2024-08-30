@@ -30,7 +30,7 @@ SELECT sum(csn_number_of_reports) AS "Total"
 FROM public.csn_metro_area_fraud_and_other
 where csn_metro like '%CA%';
 
-The above query shows a total of 397805 reports all California counties. 
+The above query shows a total of 397,805 reports all California counties. 
 
 This information allows targeted outreach, especilly
 within the Los Angeles-Long Beach Anaheim area that a report of 145,347. 
