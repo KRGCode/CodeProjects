@@ -13,7 +13,7 @@ Create Table fraud_loss_by_contact_method (
 _____________________________________________________________________________________
 
 copy fraud_loss_by_contact_method
-from 'C:\Users\rghav\3D Objects\Desktop\CSN_Fraud_Reports_by_Contact_Method.csv'
+from 'C:\Users\Private\3D Objects\Desktop\CSN_Fraud_Reports_by_Contact_Method.csv'
 with (Format CSV, Header);
 
 _____________________________________________________________________________________
